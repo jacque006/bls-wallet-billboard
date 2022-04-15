@@ -2,8 +2,10 @@
 import * as React from "react";
 
 import ReactDOM from "react-dom";
-import App from "./App";
+// import App from "./App";
+import StorageApp from "./StorageApp";
 
 window.addEventListener("load", () => {
-  ReactDOM.render(<App />, document.getElementById("app"));
+  ReactDOM.render(<StorageApp />, document.getElementById("app"));
+  // ReactDOM.render(<App />, document.getElementById("app"));
 });

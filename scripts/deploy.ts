@@ -20,6 +20,13 @@ async function main() {
   await billboard.deployed();
 
   console.log("Billboard deployed to:", billboard.address);
+
+  const Storage = await ethers.getContractFactory("Storage");
+  const storage = await Storage.deploy();
+
+  await storage.deployed();
+
+  console.log("Storage deployed to:", storage.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

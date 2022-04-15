@@ -4,6 +4,7 @@ const configJson = require("./config.json");
 
 export const Config = io.type({
   billboardAddress: io.string,
+  storageAddress: io.string,
 });
 
 export type Config = io.TypeOf<typeof Config>;
